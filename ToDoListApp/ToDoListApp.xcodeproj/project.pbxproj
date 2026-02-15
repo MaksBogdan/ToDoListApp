@@ -11,6 +11,7 @@
 		656B53992F41AC4B00D0717E /* TaskEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B53972F41AC4B00D0717E /* TaskEntity+CoreDataProperties.swift */; };
 		656B53A92F41C1FF00D0717E /* ToDoListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B53A82F41C1FF00D0717E /* ToDoListInteractor.swift */; };
 		656B53AB2F41C2C400D0717E /* ToDoListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B53AA2F41C2C400D0717E /* ToDoListPresenter.swift */; };
+		656B53AD2F41C35700D0717E /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B53AC2F41C35700D0717E /* ToDoListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		656B53972F41AC4B00D0717E /* TaskEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		656B53A82F41C1FF00D0717E /* ToDoListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListInteractor.swift; sourceTree = "<group>"; };
 		656B53AA2F41C2C400D0717E /* ToDoListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListPresenter.swift; sourceTree = "<group>"; };
+		656B53AC2F41C35700D0717E /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
 		65C0966B2F41A597001F5A5D /* ToDoListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C0967D2F41A598001F5A5D /* ToDoListAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C096872F41A599001F5A5D /* ToDoListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 			children = (
 				656B53A82F41C1FF00D0717E /* ToDoListInteractor.swift */,
 				656B53AA2F41C2C400D0717E /* ToDoListPresenter.swift */,
+				656B53AC2F41C35700D0717E /* ToDoListViewController.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656B53AD2F41C35700D0717E /* ToDoListViewController.swift in Sources */,
 				656B53AB2F41C2C400D0717E /* ToDoListPresenter.swift in Sources */,
 				656B53982F41AC4B00D0717E /* TaskEntity+CoreDataClass.swift in Sources */,
 				656B53992F41AC4B00D0717E /* TaskEntity+CoreDataProperties.swift in Sources */,
