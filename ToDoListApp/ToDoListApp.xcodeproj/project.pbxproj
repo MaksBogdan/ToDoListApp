@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		656B53982F41AC4B00D0717E /* TaskEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B53962F41AC4B00D0717E /* TaskEntity+CoreDataClass.swift */; };
+		656B53992F41AC4B00D0717E /* TaskEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B53972F41AC4B00D0717E /* TaskEntity+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		65C0967E2F41A598001F5A5D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		656B53962F41AC4B00D0717E /* TaskEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		656B53972F41AC4B00D0717E /* TaskEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		65C0966B2F41A597001F5A5D /* ToDoListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C0967D2F41A598001F5A5D /* ToDoListAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C096872F41A599001F5A5D /* ToDoListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +82,8 @@
 		65C096622F41A597001F5A5D = {
 			isa = PBXGroup;
 			children = (
+				656B53962F41AC4B00D0717E /* TaskEntity+CoreDataClass.swift */,
+				656B53972F41AC4B00D0717E /* TaskEntity+CoreDataProperties.swift */,
 				65C0966D2F41A597001F5A5D /* ToDoListApp */,
 				65C096802F41A598001F5A5D /* ToDoListAppTests */,
 				65C0968A2F41A599001F5A5D /* ToDoListAppUITests */,
@@ -236,6 +245,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				656B53982F41AC4B00D0717E /* TaskEntity+CoreDataClass.swift in Sources */,
+				656B53992F41AC4B00D0717E /* TaskEntity+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
