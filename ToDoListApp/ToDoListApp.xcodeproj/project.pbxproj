@@ -12,6 +12,7 @@
 		656B53A92F41C1FF00D0717E /* ToDoListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B53A82F41C1FF00D0717E /* ToDoListInteractor.swift */; };
 		656B53AB2F41C2C400D0717E /* ToDoListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B53AA2F41C2C400D0717E /* ToDoListPresenter.swift */; };
 		656B53AD2F41C35700D0717E /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B53AC2F41C35700D0717E /* ToDoListViewController.swift */; };
+		656B53DA2F41C47700D0717E /* ToDoListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B53D92F41C47700D0717E /* ToDoListRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,14 +38,39 @@
 		656B53A82F41C1FF00D0717E /* ToDoListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListInteractor.swift; sourceTree = "<group>"; };
 		656B53AA2F41C2C400D0717E /* ToDoListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListPresenter.swift; sourceTree = "<group>"; };
 		656B53AC2F41C35700D0717E /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
+		656B53D92F41C47700D0717E /* ToDoListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListRouter.swift; sourceTree = "<group>"; };
 		65C0966B2F41A597001F5A5D /* ToDoListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C0967D2F41A598001F5A5D /* ToDoListAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C096872F41A599001F5A5D /* ToDoListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		656B53D62F41C43100D0717E /* Exceptions for "ToDoListApp" folder in "ToDoListApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ToDoListApp.xcdatamodeld,
+			);
+			target = 65C0966A2F41A597001F5A5D /* ToDoListApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		656B53D72F41C43100D0717E /* Exceptions for "ToDoListApp" folder in "Compile Sources" phase from "ToDoListApp" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 65C096672F41A597001F5A5D /* Sources */;
+			membershipExceptions = (
+				ToDoListApp.xcdatamodeld,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		65C0966D2F41A597001F5A5D /* ToDoListApp */ = {
+		656B53CD2F41C43100D0717E /* ToDoListApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				656B53D62F41C43100D0717E /* Exceptions for "ToDoListApp" folder in "ToDoListApp" target */,
+				656B53D72F41C43100D0717E /* Exceptions for "ToDoListApp" folder in "Compile Sources" phase from "ToDoListApp" target */,
+			);
 			path = ToDoListApp;
 			sourceTree = "<group>";
 		};
@@ -95,12 +121,21 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		656B53D82F41C44D00D0717E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				656B53D92F41C47700D0717E /* ToDoListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		65C096622F41A597001F5A5D = {
 			isa = PBXGroup;
 			children = (
 				656B53962F41AC4B00D0717E /* TaskEntity+CoreDataClass.swift */,
 				656B53972F41AC4B00D0717E /* TaskEntity+CoreDataProperties.swift */,
-				65C0966D2F41A597001F5A5D /* ToDoListApp */,
+				656B53CD2F41C43100D0717E /* ToDoListApp */,
+				656B53D82F41C44D00D0717E /* Router */,
 				656B53A72F41C17700D0717E /* Components */,
 				65C096802F41A598001F5A5D /* ToDoListAppTests */,
 				65C0968A2F41A599001F5A5D /* ToDoListAppUITests */,
@@ -134,7 +169,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				65C0966D2F41A597001F5A5D /* ToDoListApp */,
+				656B53CD2F41C43100D0717E /* ToDoListApp */,
 			);
 			name = ToDoListApp;
 			packageProductDependencies = (
@@ -264,6 +299,7 @@
 			files = (
 				656B53AD2F41C35700D0717E /* ToDoListViewController.swift in Sources */,
 				656B53AB2F41C2C400D0717E /* ToDoListPresenter.swift in Sources */,
+				656B53DA2F41C47700D0717E /* ToDoListRouter.swift in Sources */,
 				656B53982F41AC4B00D0717E /* TaskEntity+CoreDataClass.swift in Sources */,
 				656B53992F41AC4B00D0717E /* TaskEntity+CoreDataProperties.swift in Sources */,
 				656B53A92F41C1FF00D0717E /* ToDoListInteractor.swift in Sources */,
