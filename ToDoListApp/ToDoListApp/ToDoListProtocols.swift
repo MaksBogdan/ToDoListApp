@@ -9,8 +9,8 @@ import Foundation
 import UIKit
 
 // MARK: - View
-protocol TaskListViewProtocol: AnyObject {
-    var presenter: TaskListPresenterProtocol? { get set }
+protocol ToDoListViewProtocol: AnyObject {
+    var presenter: ToDoListPresenterProtocol? { get set }
     
     func showTasks(_ tasks: [ToDoModel])
     func showError(_ message: String)
@@ -19,10 +19,10 @@ protocol TaskListViewProtocol: AnyObject {
 }
 
 // MARK: - Presenter
-protocol TaskListPresenterProtocol: AnyObject {
-    var view: TaskListViewProtocol? { get set }
-    var interactor: TaskListInteractorProtocol? { get set }
-    var router: TaskListRouterProtocol? { get set }
+protocol ToDoListPresenterProtocol: AnyObject {
+    var view: ToDoListViewProtocol? { get set }
+    var interactor: ToDoListInteractorProtocol? { get set }
+    var router: ToDoListRouterProtocol? { get set }
     
     func viewDidLoad()
     func addTaskTapped()
@@ -33,23 +33,23 @@ protocol TaskListPresenterProtocol: AnyObject {
 }
 
 // MARK: - Interactor
-protocol TaskListInteractorProtocol: AnyObject {
-    var presenter: TaskListInteractorOutputProtocol? { get set }
+protocol ToDoListInteractorProtocol: AnyObject {
+    var presenter: ToDoListInteractorOutputProtocol? { get set }
     
     func fetchTasks()
     func deleteTask(_ task: ToDoModel)
     func searchTasks(with query: String)
 }
 
-protocol TaskListInteractorOutputProtocol: AnyObject {
+protocol ToDoListInteractorOutputProtocol: AnyObject {
     func tasksFetched(_ tasks: [ToDoModel])
     func tasksFetchFailed(_ error: Error)
     func taskDeleted()
 }
 
 // MARK: - Router
-protocol TaskListRouterProtocol: AnyObject {
+protocol ToDoListRouterProtocol: AnyObject {
     static func createModule() -> UIViewController
-    func navigateToAddTask(from view: TaskListViewProtocol)
-    func navigateToEditTask(from view: TaskListViewProtocol, task: ToDoModel)
+    func navigateToAddTask(from view: ToDoListViewProtocol)
+    func navigateToEditTask(from view: ToDoListViewProtocol, task: ToDoModel)
 }
