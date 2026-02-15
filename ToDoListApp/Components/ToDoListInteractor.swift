@@ -37,10 +37,8 @@ class ToDoListInteractor: ToDoListInteractorProtocol {
                 let count = try context.count(for: fetchRequest)
                 
                 if count == 0 && self.isFirstLaunch {
-                    // Первый запуск - загружаем с API
                     self.loadFromAPI(context: context)
                 } else {
-                    // Загружаем из CoreData
                     self.loadFromCoreData(context: context)
                 }
             } catch {
